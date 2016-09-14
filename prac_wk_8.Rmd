@@ -1,0 +1,49 @@
+---
+title: "MXB344 Week 8 Practical Logistic Regression 2"
+author: "Miles McBain"
+date: "24 August 2016"
+output: html_document
+---
+
+#Intro
+In this session we're going to do another logistic regression, but we're going to focus on the variable selection and multi-colliearity issues discussed in this week's lecture.
+
+#Learning Objectives
+The exercise aims to give you give you some practice at selecting and discarding variables. The dataset will hopefully also introduce you to the concept of information 'leakage'.
+
+#Requirements
+To complete this exercise you will need a computer with R Studio installed and the following packages:
+
+* `dplyr`
+* `tidyr`
+* `ggplot2`
+* `readr`
+* `rmarkdown`
+* `caret`
+* `ROCR`
+* `broom`
+
+#Instructions
+Download the dataset for this prac in `bank_additional.zip` from [https://archive.ics.uci.edu/ml/machine-learning-databases/00222/](https://archive.ics.uci.edu/ml/machine-learning-databases/00222/). The data come courtesy of the UCI machine learning repository.
+
+The data in bank-additional-full describe a Bank's cusomter responses to telemarketing promotional offers. The predictive model trained by logistic regression will be for the `y` column - accept or reject the offer.
+
+As always, conduct your analysis in an RMarkdown report.
+
+#Question one
+What would be appropriate preprocessing steps for this data? What transformations would you apply?
+
+#Question two
+What information in the data needs to be considered when splitting the data into a training and hold-out sets, given the objective creating a predictive model?
+
+#Question three
+Conduct an analysis of the correlation among these covariates, and resolve any problematic correlations.
+
+#Question four
+Determine the variable importance using single linear regressions as demonstrated in the lecture. Remember that BOQ's standard process is to compare these on the basis of the gini coefficient. Do you think it is appropriate not to use hold-out data for this task?
+
+#Question five
+Given the variable importances are there issues or interesting results? **Hint: yes** Why has this occurred and what should be done about it. 
+
+#Further exercises
+Fit a logistic regression model using hold out data and examine report some of the accuracy measures. Create a train and test ROC curve.
