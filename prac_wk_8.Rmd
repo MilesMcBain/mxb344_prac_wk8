@@ -38,7 +38,7 @@ What information in the data needs to be considered when splitting the data into
 
 #Question three
 Conduct an analysis of the correlation among these covariates, and resolve any problematic correlations.
-
+_s
 #Question four
 Determine the variable importance using single linear regressions as demonstrated in the lecture. Remember that BOQ's standard process is to compare these on the basis of the gini coefficient. Do you think it is appropriate not to use hold-out data for this task?
 
